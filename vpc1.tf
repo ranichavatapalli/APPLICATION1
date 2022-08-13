@@ -16,4 +16,7 @@ variable "aws_vpc_cidr"{
      vpc_id=aws_vpc_cidr.vpc1.id
       cidr_block=var.v_sn_cidr[count.index]
      availability_zone=var.v_azs[count.index]
+   tags={
+   Name="SN1"
+}
 }
