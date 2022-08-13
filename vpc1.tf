@@ -7,6 +7,8 @@ variable "aws_vpc_cidr"{
   variable "aws_azs"{
      type=list
 }
+  resource "aws_eip" "myeip"{
+}
 
   resource "aws_vpc" "vpc1{
    cidr_block=var.v_vpc_cidr
