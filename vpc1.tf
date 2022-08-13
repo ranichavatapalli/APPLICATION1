@@ -10,6 +10,9 @@ variable "aws_vpc_cidr"{
 
   resource "aws_vpc" "vpc1{
    cidr_block=var.v_vpc_cidr
+     tags={
+        Name="VPC-TAGS"
+        ENV="VPC-TAGS"
 }
    resource "aws_subnet" "SN1"{
      count=length(var.v_sn_cidr)
